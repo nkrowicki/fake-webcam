@@ -1,4 +1,49 @@
+## 📷  Fake Webcam 
+
+Instructions in Spanish 🇪🇸 and English 🇺🇸: 
+
+## 🇺🇸 English
+
 ## Fake Webcam
+
+1. Execute the following line to install what is necessary:
+
+>    apt-get install v4l2loopback ffmpeg
+
+2. Run following command:
+
+>    modprobre v4l2loopback
+
+3. (Optional) Verify that the video device exists:
+
+>    ls /dev/video*
+
+...Probably the device is '/dev/video0'
+
+4. Go to the directory where 'fakeWebcam.sh' is located and give it execution permissions:
+
+>    chmod +x fakeWebcam.sh
+
+5. Ready! To simply execute it (stopped in that directory) we use the following command:
+
+>    ./fakeWebcam.sh input_video.mp4 /dev/video0
+
+Where 'input_video.mp4' is the video that we want to use as input source and '/ dev / video0' is the device which we are going to be "emulating".
+
+To stop the execution we simply have to press the letter 'q' (in the console which is running our super application fakeWebcam!)
+
+- EXTRA: to see the 'device' (/ dev / video0) we can use the following command:
+
+> ffplay /dev/video0
+
+
+### Buy me a coffe ☕️
+
+Do you want to buy me a coffe? Click on the following link! [https://www.buymeacoffee.com/nahuelkrowicki]
+
+---
+
+## 🇪🇸 Spanish
 
 1. Corremos la siguiente linea para instalar lo necesario:
 
@@ -29,3 +74,9 @@ Para detener la ejecución simplemente debemos presionar la letra 'q' (en la con
 - EXTRA: para ver el 'dispositivo' (/dev/video0) podemos usar:
 
 > ffplay /dev/video0
+> 
+
+
+### Comprame un café ☕️
+
+Te gustaría invitarme un café? Hacé click en el siguiente enlace! [https://www.buymeacoffee.com/nahuelkrowicki]
