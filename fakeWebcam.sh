@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Ejemplo: 
+#Example/Ejemplo: 
 #./fakeWebcam.sh input_video.mp4 /dev/video0
 
 INPUT=$1
